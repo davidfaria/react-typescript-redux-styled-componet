@@ -4,7 +4,7 @@ import { Provider } from 'react-redux'
 import reportWebVitals from './reportWebVitals'
 
 import 'styles/libs.css'
-import 'styles/global.css'
+// import 'styles/global.css'
 
 import store from 'store'
 import Toast from 'components/Toast'

@@ -1,6 +1,6 @@
 import api from './api'
 
-const onLogin = async (email: string, password: string) => {
+const authenticate = async (email: string, password: string) => {
   const response = await api.post('/sessions', {
     email,
     password
@@ -11,4 +11,4 @@ const onLogin = async (email: string, password: string) => {
   return sessions
 }
 
-export default { onLogin }
+export default { authenticate }
