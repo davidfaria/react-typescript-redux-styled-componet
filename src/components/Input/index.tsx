@@ -1,7 +1,7 @@
 import { InputHTMLAttributes } from 'react'
 import { FieldError } from 'react-hook-form'
 import Error from 'components/Error'
-import * as S from './Input.styles'
+import * as S from './styles'
 
 type RefReturn =
   | string

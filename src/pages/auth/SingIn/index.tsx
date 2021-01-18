@@ -5,11 +5,11 @@ import { useDispatch, useSelector } from 'react-redux'
 
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
-import schema from './Validation'
+import schema from './validation'
 
 import Input from 'components/Input'
 
-import * as S from './SingIn.styles'
+import * as S from './styles'
 
 type Inputs = {
   email: string

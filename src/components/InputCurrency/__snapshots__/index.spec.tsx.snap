@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputCurrency /> should render the heading 1`] = `
+<div
+  class="sc-bdfBwQ"
+>
+  <h1>
+    InputCurrency
+  </h1>
+</div>
+`;

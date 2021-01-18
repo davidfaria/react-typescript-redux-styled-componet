@@ -1,5 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export const isObjectOrArray = (value: any): boolean => {
   const result = Array.isArray(value) || typeof value === 'object'
   return result
