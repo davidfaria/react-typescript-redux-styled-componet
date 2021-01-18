@@ -1,5 +1,7 @@
+import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useHistory } from 'react-router-dom'
+import api from 'services/api'
 import { getIsLogged, setLogout } from 'store/UserSlice'
 
 const Dashboard = () => {
@@ -11,6 +13,10 @@ const Dashboard = () => {
     dispatch(setLogout())
     history.push('/singin')
   }
+
+  React.useEffect(() => {
+    api.get('/users').then((response) => console.log(response.data))
+  }, [])
 
   return (
     <div>

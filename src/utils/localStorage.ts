@@ -1,6 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 
-const isObjectOrArray = (value: any): boolean => {
+export const isObjectOrArray = (value: any): boolean => {
   const result = Array.isArray(value) || typeof value === 'object'
   return result
 }
@@ -16,8 +16,8 @@ const setItem = (key: string, value: any) => {
 }
 
 const getItem = (key: string) => {
-  let value = localStorage.getItem(key) || ''
-  if (isObjectOrArray(value)) {
+  let value = localStorage.getItem(key)
+  if (value && isObjectOrArray(value)) {
     value = JSON.parse(value)
   }
   return value

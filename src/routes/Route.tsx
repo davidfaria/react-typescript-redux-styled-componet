@@ -1,3 +1,4 @@
+import React from 'react'
 import {
   RouteProps as ReactDOMRouteProps,
   Route as ReactDOMRoute,
@@ -6,25 +7,32 @@ import {
 
 import PrivateLayout from 'pages/Layout/PrivateLayout'
 import PublicLayout from 'pages/Layout/PublicLayout'
+import { useSelector } from 'react-redux'
+import { getIsLogged } from 'store/UserSlice'
 
-type RouteProps = {
+interface RouteProps extends ReactDOMRouteProps {
   isPrivate?: boolean
   component: React.ComponentType
-} & ReactDOMRouteProps
+}
 
-const Route = ({
+const Route: React.FC<RouteProps> = ({
   isPrivate = false,
   component: Component,
-  ...props
-}: RouteProps) => {
-  const Layout = isPrivate === true ? PrivateLayout : PublicLayout
+  ...rest
+}) => {
+  const islogged = useSelector(getIsLogged) as boolean
+
+  console.log('islogged', islogged)
+  const Layout = islogged ? PrivateLayout : PublicLayout
 
   return (
     <ReactDOMRoute
-      {...props}
+      {...rest}
       render={({ location }) => {
-        return isPrivate ? (
-          <Layout>{/* <Component /> */}</Layout>
+        return isPrivate === islogged ? (
+          <Layout>
+            <Component />
+          </Layout>
         ) : (
           <Redirect
             to={{

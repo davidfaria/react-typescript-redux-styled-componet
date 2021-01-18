@@ -1,5 +1,7 @@
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
-// import Route from './Route''
+import { BrowserRouter, Switch, Redirect } from 'react-router-dom'
+
+import Route from './Route'
+
 import SingIn from 'pages/auth/SingIn'
 import Dashboard from 'pages/dashboard/Dashboard'
 import CustomerList from 'pages/customers/CustomerList'
@@ -9,8 +11,8 @@ const Routes = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/" component={SingIn} exact />
-        <Route path="/singin" component={SingIn} isPrivate />
+        <Redirect path="/" to="/singin" exact />
+        <Route path="/singin" component={SingIn} />
         <Route path="/dashboard" component={Dashboard} isPrivate />
         <Route path="/customers" component={CustomerList} isPrivate />
         <Route path="/counter" component={Counter} isPrivate />
