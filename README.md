@@ -1,46 +1,79 @@
-# Getting Started with Create React App
+# React Typescript
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/davidfaria/react-typescript-redux-styled-componet/blob/master/LICENSE)
+![](https://img.shields.io/github/package-json/v/davidfaria/react-typescript-redux-styled-componet.svg)
+![](https://img.shields.io/github/last-commit/davidfaria/react-typescript-redux-styled-componet.svg?color=red)
+![](https://img.shields.io/github/languages/top/davidfaria/react-typescript-redux-styled-componet.svg?color=yellow)
+![](https://img.shields.io/github/languages/count/davidfaria/react-typescript-redux-styled-componet.svg?color=lightgrey)
+![](https://img.shields.io/github/languages/code-size/davidfaria/react-typescript-redux-styled-componet.svg)
+![](https://img.shields.io/github/repo-size/davidfaria/react-typescript-redux-styled-componet.svg?color=blueviolet)
+[![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
+![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)
 
-## Available Scripts
 
-In the project directory, you can run:
+## Demonstração
 
-### `yarn start`
+<h1 align="center">
+<img src="https://raw.githubusercontent.com/davidfaria/react-typescript-redux-styled-componet/master/.github/example.gif">
+</h1>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## :rocket: Technologies
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Este projeto foi desenvolvido com as seguintes tecnologias
 
-### `yarn test`
+- [ReactJS](https://reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)]
+- [Redux Toolkit](https://redux-toolkit.js.org/)
+- [react-router-dom](https://reactrouter.com/web/guides/quick-start)
+- [styled-components](https://styled-components.com/)
+- [React Hook Form](https://react-hook-form.com/)
+- [Yup](https://github.com/jquense/yup)
+- [date-fns](https://date-fns.org/)
+- [VS Code](https://code.visualstudio.com/), [ESLint](https://eslint.org/), [Prettier](https://prettier.io/)
+- [JEST](https://jestjs.io/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+## :computer: Front-end
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Pré requisitos
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Git [Git](https://git-scm.com)
+- Node.js [Node.js v12LTS ou superior](https://nodejs.org/)
+- Yarn [Yarn v1.13](https://yarnpkg.com/)
+- Google Chrome Browser [Google](https://www.google.pt/intl/pt-PT/chrome/?brand=CHBD&gclid=CjwKCAiAxMLvBRBNEiwAKhr-nMvKg5nZhwHd__xLE-Mume31jYijN5WLG991vsf4owDGK4VNHWtrEhoCNRgQAvD_BwE&gclsrc=aw.ds)
+- Back-end (Você precisa prover uma api para simular o login)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Instruções
 
-### `yarn eject`
+```bash
+# download / Clone o repositório:
+git clone https://github.com/davidfaria/react-typescript-redux-styled-componet.git
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# entrar na pasta do projeto
+cd react-typescript-redux-styled-componet
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# instalando as dependências do package.json:
+yarn install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# criar .env para informar as SUAS variáveis de ambiente
+cp .env.example .env
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# iniciar a aplicação web
+yarn start
+```
 
-## Learn More
+## Teste utilizando o browser.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+http://localhost:3000
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
+
+## :memo: Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## Demonstração
+
+<h1 align="center">
+<img src="https://raw.githubusercontent.com/davidfaria/react-typescript-redux-styled-componet/master/.github/web.gif">
+</h1>
