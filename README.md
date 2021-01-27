@@ -22,7 +22,7 @@
 Este projeto foi desenvolvido com as seguintes tecnologias
 
 - [ReactJS](https://reactjs.org/)
-- [Typescript](https://www.typescriptlang.org/)]
+- [Typescript](https://www.typescriptlang.org/)
 - [Redux Toolkit](https://redux-toolkit.js.org/)
 - [react-router-dom](https://reactrouter.com/web/guides/quick-start)
 - [styled-components](https://styled-components.com/)
@@ -38,8 +38,8 @@ Este projeto foi desenvolvido com as seguintes tecnologias
 ## Pré requisitos
 
 - Git [Git](https://git-scm.com)
-- Node.js [Node.js v12LTS ou superior](https://nodejs.org/)
-- Yarn [Yarn v1.13](https://yarnpkg.com/)
+- Node.js [Node.js v14LTS ou superior](https://nodejs.org/)
+- Yarn [Yarn v1.22.5 ou superior](https://yarnpkg.com/)
 - Google Chrome Browser [Google](https://www.google.pt/intl/pt-PT/chrome/?brand=CHBD&gclid=CjwKCAiAxMLvBRBNEiwAKhr-nMvKg5nZhwHd__xLE-Mume31jYijN5WLG991vsf4owDGK4VNHWtrEhoCNRgQAvD_BwE&gclsrc=aw.ds)
 - Back-end (Você precisa prover uma api para simular o login)
 
@@ -71,9 +71,3 @@ http://localhost:3000
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-## Demonstração
-
-<h1 align="center">
-<img src="https://raw.githubusercontent.com/davidfaria/react-typescript-redux-styled-componet/master/.github/web.gif">
-</h1>
